@@ -2,6 +2,8 @@
 import datetime
 import json
 import os
+from pathlib import Path
+from typing import Any, Dict, Union
 
 # Third Party
 import requests
@@ -17,4 +19,8 @@ def import_dashboard():
 
 
 def import_alert():
+    pass
+
+
+def save_redash_object(redash_object: Dict[str, Any], output_path: Union[Path, str]) -> None:
     pass
