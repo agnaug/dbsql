@@ -194,6 +194,18 @@ files = [
 ]
 
 [[package]]
+name = "docstring-parser"
+version = "0.15"
+description = "Parse Python docstrings in reST, Google and Numpydoc format"
+category = "main"
+optional = false
+python-versions = ">=3.6,<4.0"
+files = [
+    {file = "docstring_parser-0.15-py3-none-any.whl", hash = "sha256:d1679b86250d269d06a99670924d6bce45adc00b08069dae8c47d98e89b667a9"},
+    {file = "docstring_parser-0.15.tar.gz", hash = "sha256:48ddc093e8b1865899956fcc03b03e66bb7240c310fac5af81814580c55bf682"},
+]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.1.1"
 description = "Backport of PEP 654 (exception groups)"
@@ -514,6 +526,27 @@ socks = ["PySocks (>=1.5.6,!=1.5.7)"]
 use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
+name = "simple-parsing"
+version = "0.1.1"
+description = "A small utility for simplifying and cleaning up argument parsing scripts."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "simple_parsing-0.1.1-py3-none-any.whl", hash = "sha256:bde7b2c47fdea3338be333e33009be8380989c0dda6e39558a74b5686899991b"},
+    {file = "simple_parsing-0.1.1.tar.gz", hash = "sha256:71b00c78e8b67f93cdc640f6999304e6a352d0ceef180b27d6a9d866f76c8041"},
+]
+
+[package.dependencies]
+docstring-parser = ">=0.15,<1.0"
+typing-extensions = ">=4.3.0"
+
+[package.extras]
+all = ["pytest", "pytest-regressions", "pytest-xdist", "pyyaml"]
+test = ["pytest", "pytest-regressions", "pytest-xdist"]
+yaml = ["pyyaml"]
+
+[[package]]
 name = "snowballstemmer"
 version = "2.2.0"
 description = "This package provides 29 stemmers for 28 languages generated from Snowball algorithms."
@@ -541,7 +574,7 @@ files = [
 name = "typing-extensions"
 version = "4.5.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
@@ -569,4 +602,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "4e14d2422bc68c2c68fa1f8a0e4e4ade338ad6784ca745ec6699a5399c2863ff"
+content-hash = "ba270d319df942f100dbf69f56326aa8cf859a847d3a10637e43fffc08ec3128"
