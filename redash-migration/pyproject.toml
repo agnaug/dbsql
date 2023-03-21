@@ -26,6 +26,9 @@ invoke = "^2.0.0"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.poetry.scripts]
+main = "redash_migration.main:main"
+
 [tool.coverage.run]
 branch = true
 omit = ["tests/*", "**/__init__.py", "tasks.py", "**/main.py"]
