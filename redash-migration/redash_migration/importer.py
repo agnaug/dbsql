@@ -6,4 +6,3 @@ import os
 # Third Party
 import requests
 from redash_toolbelt.client import Redash
-
