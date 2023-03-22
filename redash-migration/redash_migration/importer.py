@@ -3,7 +3,7 @@ import datetime
 import json
 import os
 from pathlib import Path
-from typing import Any, Dict, Union
+from typing import Any, Dict, Mapping, Union
 
 # Third Party
 import requests
@@ -19,6 +19,10 @@ def import_dashboard():
 
 
 def import_alert():
+    pass
+
+
+def import_objects():
     pass
 
 
